@@ -1062,6 +1062,13 @@ header .header-mobile .header-toggle i {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.about-section .services .service-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
 
 .clients .client-logo img {
     width: 100px;
