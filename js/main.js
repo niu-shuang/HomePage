@@ -16,7 +16,7 @@
     Copyright: 2018
 
 ****************************************************************/
-/*
+
 (function() {
     if (navigator.userAgent.match(/[Mm]obile/)) {
         var $html = $('html');
@@ -26,7 +26,7 @@
         }).trigger('resize');
     }
 })();
-*/
+
 
 /*======== Window Load Function ========*/
 $(window).on('load', function() {
