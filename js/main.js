@@ -17,11 +17,22 @@
 
 ****************************************************************/
 
+(function() {
+    if (navigator.userAgent.match(/[Mm]obile/)) {
+        var $html = $('html');
+        //$html.addClass('mobile');
+        $(window).on('resize orientationchange', function() {
+            $html.css('zoom', screen.width / 720);
+        }).trigger('resize');
+    }
+})();
+
+
 /*======== Window Load Function ========*/
 $(window).on('load', function() {
 
     /*======== Preloader ========*/
-    $(".loader").fadeOut();
+    $(".loader").delay(1000).fadeOut();
     $(".preloader").delay(1000).fadeOut();
 
 
